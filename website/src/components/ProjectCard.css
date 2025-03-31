@@ -1,11 +1,11 @@
 .projOutline {
-  border: 2px solid black; /* Light grey border */
-  border-radius: 8px; /* Rounded corners */
+  border: 2px solid black; 
+  border-radius: 8px;
   height: 400px;
   width: 300px;
-  padding: 20px; /* Add padding around the content */
+  padding: 20px;
   display: flex;
-  flex-direction: column; /* Ensure elements are stacked vertically */
+  flex-direction: column;
 }
 
 .projHeader {
@@ -17,7 +17,7 @@
 .projDescript {
   font-family: 'Barlow', sans-serif;
   color: #247BA0;
-  font-size: 1.35vw;
+  font-size: 15px;
   flex-grow: 1; 
 }
 
@@ -28,3 +28,47 @@
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
+.projStack {
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.projButton {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.projButton button {
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projButton button:first-child {
+  background-color: #247BA0;
+  color: white;
+  width: 80px;
+}
+
+.projButton button:last-child {
+  background-color: transparent;
+  color: #247BA0;
+  flex-grow: 1;
+  border: 2px solid #247BA0;
+}
+
+.projOutline span {
+  background-color: #247BA0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+

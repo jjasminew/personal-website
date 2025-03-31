@@ -4,8 +4,8 @@ import ProjectCard from './ProjectCard';
 import 'react-multi-carousel/lib/styles.css';
 import CampusFloImage from '../assets/campusflo.png';
 import AthenaImage from '../assets/athenaImage.png';
-import BlobImage from '../assets/blobImage.png'
-import GstemImage from '../assets/gstemImage.jpg'
+import BlobImage from '../assets/blobImage.png';
+import GstemImage from '../assets/gstemImage.jpg';
 import './Component.css';
 
 const Projects = () => {
@@ -35,25 +35,25 @@ const Projects = () => {
             <ProjectCard 
               title="CampusFlo"
               techStack={["React", "Firebase", "HTML/CSS"]}
-              description="hello"
+              description="A web app that tackles period poverty and the lack of menstrual health education in schools."
               imageSrc={CampusFloImage}
             />
             <ProjectCard 
               title="Athena"
-              techStack={["React", "Firebase", "HTML/CSS"]}
-              description="hello"
+              techStack={["Python", "HTML/CSS", "OpenAI API"]}
+              description="A mental companion chatbot that responds to the needs of underrepresented genders in STEM."
               imageSrc={AthenaImage}
             />
             <ProjectCard 
               title="B.L.O.B."
-              techStack={["React", "Firebase", "HTML/CSS"]}
-              description="hello"
+              techStack={["JavaScript", "HTML/CSS", "MongoDB"]}
+              description="A web game for children to develop emotional awareness through interactive games and visual aids."
               imageSrc={BlobImage}
             />
             <ProjectCard 
               title="(G)-STEM"
-              techStack={["React", "Firebase", "HTML/CSS"]}
-              description="hello"
+              techStack={["JavaScript", "HTML/CSS"]}
+              description="A website that provides resources to empower young women to join STEM fields."
               imageSrc={GstemImage}
             />
           </Carousel>

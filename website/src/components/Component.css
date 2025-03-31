@@ -1,7 +1,29 @@
+/* Header CSS */
+
+.navBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Aligns the links to the right */
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  color: #247BA0;
+  font-size: 1.5vw;
+  margin-right: 50px;
+}
+
+.navLink:visited {
+  color: #247BA0;
+}
+
+/* Home CSS */
+
 .header {
   font-family: 'Barlow', sans-serif;
   color: transparent;
-  font-size: 3.5vw;
+  font-size: 3.8vw;
 	-webkit-text-stroke-width: 1.4px;
   -webkit-text-stroke-color: #247BA0;
 }
@@ -9,15 +31,108 @@
 .descript {
   font-family: 'Barlow', sans-serif;
   color: #247BA0;
-  font-size: 1.35vw;
+  font-size: 1.5vw;
 }
+
+.profilePhotoEffect {
+  position: relative;
+  display: inline-block;
+  margin-top: 60px; /* Moves the entire section down */
+}
+
+.profilePhotoEffect::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Moves it further up */
+  left: -35px; /* Moves it further left */
+  width: 300px; /* Slightly larger than the image */
+  height: 300px;
+  background-color: #247BA0; /* Adjust to preferred color */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.profilePhoto {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.homeBox {
+  display: flex;
+  align-items: center;
+}
+
+.homeTextBox {
+  flex: 1;
+}
+
+/* About CSS */
+
+.aboutImageEffect {
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.aboutImageEffect::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #247BA0; /* Adjust to preferred color */
+  z-index: -1;
+}
+
+.aboutImage {
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.aboutBox {
+  display: flex;
+  align-items: center;
+}
+
+.aboutText{
+  margin-left: 3%;
+  margin-top: 5%;
+}
+
+.aboutSubtitle{
+  font-family: 'Barlow', sans-serif;
+  -webkit-text-stroke-width: 1.4px;
+  -webkit-text-stroke-color: #247BA0;
+  color: transparent;
+  font-size: 2vw;
+}
+
+.aboutDescript{
+  font-family: 'Barlow', sans-serif;
+  color: #247BA0;
+  font-size: 1.5vw;
+}
+
+/* Projects CSS */
 
 .react-multi-carousel-list {
   display: flex;
-  justify-content: space-between; /* Ensure items don't overlap */
+  justify-content: space-between;
 }
 
-.react-multi-carousel-item {
-  display: flex;
-  justify-content: center;
+/* Contact CSS */
+
+.contactLogo{
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
 }

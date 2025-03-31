@@ -6,14 +6,18 @@ const ProjectCard = ({ title, techStack, description, imageSrc }) => {
     <div className="projOutline">
       <img src={imageSrc} alt={title} className="image"/>
       <h3 className="projHeader">{title}</h3>
-      {techStack.map((tech, index) => (
-        <span key={index}>
-          {tech}
-        </span>
-      ))}
+      <div className="projStack">
+        {techStack.map((tech, index) => (
+          <span key={index}>
+            {tech}
+          </span>
+        ))}
+      </div>
       <p className="projDescript">{description}</p>
-      <button>🌍</button>
-      <button>View More</button>
+      <div className="projButton">
+        <button>Link</button>
+        <button>Learn More</button>
+      </div>
     </div>
   );
 }
