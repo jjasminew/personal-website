@@ -1,11 +1,16 @@
 import React from 'react';
+import './Component.css';
 
 const About = () => {
     return (
         <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am [Your Name], a HeadStart Fellowship fellow</p>
-            <p>Feel free to add more info here.</p>
+            <h2 class="header">about me</h2>
+            <ul class="descript">
+                <li>19-year old who is passionate about creating social change through tech</li>
+                <li>second-year computer science and linguistics major</li>
+                <li>incoming swe intern @ snap</li>
+                <li>2x hackathon winner</li>
+            </ul>
         </section>
     );
 };

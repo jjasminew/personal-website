@@ -1,0 +1,23 @@
+.header {
+  font-family: 'Barlow', sans-serif;
+  color: transparent;
+  font-size: 3.5vw;
+	-webkit-text-stroke-width: 1.4px;
+  -webkit-text-stroke-color: #247BA0;
+}
+
+.descript {
+  font-family: 'Barlow', sans-serif;
+  color: #247BA0;
+  font-size: 1.35vw;
+}
+
+.react-multi-carousel-list {
+  display: flex;
+  justify-content: space-between; /* Ensure items don't overlap */
+}
+
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+}
