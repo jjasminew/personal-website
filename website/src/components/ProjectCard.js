@@ -1,25 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ProjectCard.css';
 
-const ProjectCard = ({ title, techStack, description, imageSrc }) => {
+const ProjectCard = ({ title, techStack, description, imageSrc, link }) => {
   return (
     <div className="projOutline">
-      <img src={imageSrc} alt={title} className="image"/>
+      <img src={imageSrc} alt={title} className="image" />
       <h3 className="projHeader">{title}</h3>
       <div className="projStack">
         {techStack.map((tech, index) => (
-          <span key={index}>
-            {tech}
-          </span>
+          <span key={index}>{tech}</span>
         ))}
       </div>
       <p className="projDescript">{description}</p>
       <div className="projButton">
-        <button>Link</button>
-        <button>Learn More</button>
+        <button onClick={() => window.open(link, '_blank')}>Link</button>
+        <Link to="/campusflo">
+          Learn More
+        </Link>
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

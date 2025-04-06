@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header CSS */
 
 .navBox {
@@ -12,6 +18,7 @@
   color: #247BA0;
   font-size: 1.5vw;
   margin-right: 50px;
+  font-weight: 500;
 }
 
 .navLink:visited {
@@ -23,7 +30,7 @@
 .header {
   font-family: 'Barlow', sans-serif;
   color: transparent;
-  font-size: 3.8vw;
+  font-size: 4.2vw;
 	-webkit-text-stroke-width: 1.4px;
   -webkit-text-stroke-color: #247BA0;
 }
@@ -31,7 +38,19 @@
 .descript {
   font-family: 'Barlow', sans-serif;
   color: #247BA0;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
+  font-weight: 500;
+  overflow: hidden;
+  border-right: 1.75px solid #247BA0;
+  white-space: nowrap;
+  animation: typing 4.5s steps(50, 
+  end) forwards;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 49ch }
 }
 
 .profilePhotoEffect {
@@ -62,6 +81,7 @@
 .homeBox {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .homeTextBox {
@@ -97,12 +117,20 @@
 
 .aboutBox {
   display: flex;
+  flex-direction: column;
+}
+
+.aboutRow {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .aboutText{
   margin-left: 3%;
-  margin-top: 5%;
+  margin-top: 8%;
+  font-weight: 500;
 }
 
 .aboutSubtitle{
@@ -110,13 +138,64 @@
   -webkit-text-stroke-width: 1.4px;
   -webkit-text-stroke-color: #247BA0;
   color: transparent;
-  font-size: 2vw;
+  font-size: 2.2vw;
 }
 
 .aboutDescript{
   font-family: 'Barlow', sans-serif;
   color: #247BA0;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
+}
+
+.aboutDescript li{
+  margin: 10px 0;
+}
+
+.interestsImageEffect {
+  position: relative;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.interestsImageEffect::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #247BA0; /* Adjust to preferred color */
+  z-index: -1;
+}
+
+.interestsImage {
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.interestsText{
+  font-weight: 500;
+}
+
+.interestsSubtitle{
+  font-family: 'Barlow', sans-serif;
+  -webkit-text-stroke-width: 1.4px;
+  -webkit-text-stroke-color: #247BA0;
+  color: transparent;
+  font-size: 2.2vw;
+}
+
+.interestsDescript{
+  font-family: 'Barlow', sans-serif;
+  color: #247BA0;
+  font-size: 1.6vw;
+}
+
+.interestsDescript li{
+  margin: 10px 0;
 }
 
 /* Projects CSS */
@@ -124,6 +203,11 @@
 .react-multi-carousel-list {
   display: flex;
   justify-content: space-between;
+}
+
+.react-multi-carousel-item {
+  box-sizing: border-box;
+  min-width: 0; /* Prevent content from overflowing */
 }
 
 /* Contact CSS */
