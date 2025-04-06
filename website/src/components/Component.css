@@ -9,7 +9,7 @@ html {
 .navBox {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; /* Aligns the links to the right */
+  justify-content: flex-end; 
 }
 
 .navLink {
@@ -23,6 +23,13 @@ html {
 
 .navLink:visited {
   color: #247BA0;
+}
+
+/* Footer CSS */
+
+.footer{
+  height: 50px;
+  width: auto;
 }
 
 /* Home CSS */
@@ -118,6 +125,7 @@ html {
 .aboutBox {
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 
 .aboutRow {
@@ -207,7 +215,7 @@ html {
 
 .react-multi-carousel-item {
   box-sizing: border-box;
-  min-width: 0; /* Prevent content from overflowing */
+  min-width: 0;
 }
 
 /* Contact CSS */

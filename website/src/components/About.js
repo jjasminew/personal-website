@@ -1,6 +1,7 @@
 import React from 'react';
 import './Component.css';
 import aboutImage from '../assets/aboutImage.JPG';
+import aboutImage2 from '../assets/athenahacks.jpg';
 
 const About = () => {
     return (
@@ -35,7 +36,7 @@ const About = () => {
                 </div>
                 <div class="interestsImage">
                     <div className="interestsImageEffect">
-                        <img class="interestsImage" src={aboutImage} alt="jasmine and kode with klossy" />
+                        <img class="interestsImage" src={aboutImage2} alt="jasmine and kode with klossy" />
                     </div>
                 </div>
             </div>

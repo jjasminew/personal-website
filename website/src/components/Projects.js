@@ -47,13 +47,15 @@ const Projects = () => {
               description="A web app that tackles period poverty for college students and the lack of menstrual health education in schools."
               imageSrc={CampusFloImage}
               link="https://campusflo.replit.app/"
+              learnBtnRoute="/campusflo"
             />
             <ProjectCard 
               title="Athena"
               techStack={["Python", "HTML/CSS", "OpenAI API"]}
-              description="A mental companion chatbot that responds to the needs of underrepresented genders in STEM."
+              description="A mental health companion chatbot that responds to the unique experiences of underrepresented genders in STEM."
               imageSrc={AthenaImage}
               link="https://devpost.com/software/athena-wed3pr"
+              learnBtnRoute="/athena"
             />
             <ProjectCard 
               title="B.L.O.B."
@@ -61,6 +63,7 @@ const Projects = () => {
               description="A web game for children to develop emotional awareness through interactive games and visual aids."
               imageSrc={BlobImage}
               link="https://devpost.com/software/b-l-o-b"
+              learnBtnRoute="/blob"
             />
             <ProjectCard 
               title="(G)-STEM"
@@ -68,6 +71,7 @@ const Projects = () => {
               description="A website that provides resources to empower young women to join STEM fields."
               imageSrc={GstemImage}
               link="https://jjasminew.github.io/g-stem/"
+              learnBtnRoute="/blob"
             />
           </Carousel>
       </section>

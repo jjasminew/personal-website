@@ -1,0 +1,82 @@
+.projectBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.projectTitle{
+  font-family: 'Barlow', sans-serif;
+  color: transparent;
+  font-size: 40px;
+	-webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #247BA0;
+}
+
+.projectDescript{
+  font-family: 'Barlow', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+.projectSubtitle{
+  font-family: 'Barlow', sans-serif;
+  color: transparent;
+  font-size: 30px;
+	-webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #247BA0;
+}
+
+.projectSkills{
+  font-family: 'Barlow', sans-serif;
+  color: transparent;
+  font-size: 30px;
+	-webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #247BA0;
+}
+
+.projectSkillsList{
+  font-family: 'Barlow', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+.projectImageEffect::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #247BA0; /* Adjust to preferred color */
+  z-index: -1;
+}
+
+.projectImageEffect{
+  position: relative;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.projectImageAlign{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectImage{
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.githubLogo{
+  margin-top: 60px;
+  margin-left: 100px;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 50%;
+  object-fit: cover;
+}
